@@ -25,7 +25,10 @@ pip install dlib
 ## Usage
 - Please note the this repo is only tested on Windows 10.
 - To use first clone the repository.
-- Please run the file **smileDetector.py**.
+- Please run in the command line:
+```
+python smileDetector.py
+```
 
 ### Running
 - Download the trained model from this [link](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2). Place the downloaded file in **Models/** folder in the project.
@@ -43,6 +46,9 @@ python smileDetector.py --webcam_idx 1
 - Post-process the per frame results by applying a windowing filter to make the results more consistent.
 ### Results
 - Gives a reasonable accuracy for smile detection.
+
+### Improvement
+The accuracy can be significantly improved by using a classification model which is trained on images of faces representing smile/non-smile labels. But it might be computationally intensive as well. 
 
 ### Scaling
 -  For scaling it to multiple cameras, the process has to be parallelized.
