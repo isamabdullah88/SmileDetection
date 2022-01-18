@@ -31,7 +31,7 @@ python smileDetector.py
 ```
 
 ### Running
-- Download the trained model from this [link](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2). Place the downloaded file in **Models/** folder in the project.
+- Download the trained model from this [link](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2). Place the downloaded file in **models/** folder in the project.
 - There is a commandline arguemnt for the index of webcam. Normally it is 0 (which is the default). If it does not work for you, please change it using a different number (say 1):
 ```
 python smileDetector.py --webcam_idx 1

@@ -170,8 +170,8 @@ def overlay_transparent(background, overlay, x, y):
 
 def main(webcam_idx):
 	
-	shape_model_path = 'Models/shape_predictor_68_face_landmarks.dat'
-	smile_overlay_path = 'Data/smile.png'
+	shape_model_path = './models/shape_predictor_68_face_landmarks.dat'
+	smile_overlay_path = './data/smile.png'
 
 	smile_detector = SmileDetector(shape_model_path, smile_overlay_path, webcam_idx=webcam_idx)
 
